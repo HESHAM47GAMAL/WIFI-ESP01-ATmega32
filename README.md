@@ -27,6 +27,6 @@
 
 ## Demo
 
-[Click here to watch the video](https://www.youtube.com/watch?v=RN_lC8C-PBA)
+![Click here to watch the video](https://www.youtube.com/watch?v=RN_lC8C-PBA)
 
 
