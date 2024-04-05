@@ -4,6 +4,7 @@
 - [Block-Diagram](#Block-Diagram)
 - [Tools](#Tools)
 - [Demo](#Demo)
+- [Yotube](#Yotube)
 
 ## Description
 <p>There are implementation for Wifi ESP8266 to deal with ThingSpeak as catch value and make visualization for it in graph 📈 </p>
@@ -17,7 +18,7 @@
 <img src= "https://github.com/HESHAM47GAMAL/WIFI-ESP01-ATmega32/blob/main/Schematic.png">
 
 ## Block-Diagram
-<img src= "https://github.com/HESHAM47GAMAL/WIFI-ESP01-ATmega32/blob/main/BlockDiagram.png">
+<img src= "https://github.com/HESHAM47GAMAL/WIFI-ESP01-ATmega32/blob/main/New_BlockDiagram.png">
 
 ## Tools
 <p>1.Eclipse </p>
@@ -30,3 +31,5 @@
 ![Click here to watch the video](https://www.youtube.com/watch?v=RN_lC8C-PBA)
 
 
+## Yotube
+[Can go to yotube video to watch more details and avoid some mistakes](https://www.youtube.com/embed/RN_lC8C-PBA?si=3bOpSMosy5-1dwtE)
