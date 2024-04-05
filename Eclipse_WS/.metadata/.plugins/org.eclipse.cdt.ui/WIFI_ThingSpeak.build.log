@@ -1,0 +1,196 @@
+21:15:50 **** Build of configuration Debug for project WIFI_ThingSpeak ****
+make all 
+Building file: ../SERVICE/STRING_SERVICE_FUN.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"SERVICE/STRING_SERVICE_FUN.d" -MT"SERVICE/STRING_SERVICE_FUN.o" -c -o "SERVICE/STRING_SERVICE_FUN.o" "../SERVICE/STRING_SERVICE_FUN.c"
+Finished building: ../SERVICE/STRING_SERVICE_FUN.c
+ 
+Building file: ../MCAL/USART/USART_config.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"MCAL/USART/USART_config.d" -MT"MCAL/USART/USART_config.o" -c -o "MCAL/USART/USART_config.o" "../MCAL/USART/USART_config.c"
+Finished building: ../MCAL/USART/USART_config.c
+ 
+Building file: ../MCAL/USART/USART_program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"MCAL/USART/USART_program.d" -MT"MCAL/USART/USART_program.o" -c -o "MCAL/USART/USART_program.o" "../MCAL/USART/USART_program.c"
+../MCAL/USART/USART_program.c:20:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+In file included from ../MCAL/USART/USART_program.c:21:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../MCAL/USART/USART_program.c: In function 'USART_receiveByteAsynchCallBack':
+../MCAL/USART/USART_program.c:211: warning: function return types not compatible due to 'volatile'
+../MCAL/USART/USART_program.c: In function 'USART_receiveStringAsynchCallBack':
+../MCAL/USART/USART_program.c:217: warning: function return types not compatible due to 'volatile'
+Finished building: ../MCAL/USART/USART_program.c
+ 
+Building file: ../MCAL/TIMER0/TIMER0_config.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"MCAL/TIMER0/TIMER0_config.d" -MT"MCAL/TIMER0/TIMER0_config.o" -c -o "MCAL/TIMER0/TIMER0_config.o" "../MCAL/TIMER0/TIMER0_config.c"
+Finished building: ../MCAL/TIMER0/TIMER0_config.c
+ 
+Building file: ../MCAL/TIMER0/TIMER0_program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"MCAL/TIMER0/TIMER0_program.d" -MT"MCAL/TIMER0/TIMER0_program.o" -c -o "MCAL/TIMER0/TIMER0_program.o" "../MCAL/TIMER0/TIMER0_program.c"
+In file included from ../MCAL/TIMER0/TIMER0_program.c:19:
+../MCAL/TIMER0/../../SERVICE/IVT.h:21:1: warning: "SREG" redefined
+In file included from ../MCAL/TIMER0/TIMER0_program.c:14:
+../MCAL/TIMER0/TIMER0_private.h:26:1: warning: this is the location of the previous definition
+Finished building: ../MCAL/TIMER0/TIMER0_program.c
+ 
+Building file: ../MCAL/GPIO/GPIO_program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"MCAL/GPIO/GPIO_program.d" -MT"MCAL/GPIO/GPIO_program.o" -c -o "MCAL/GPIO/GPIO_program.o" "../MCAL/GPIO/GPIO_program.c"
+Finished building: ../MCAL/GPIO/GPIO_program.c
+ 
+Building file: ../MCAL/ADC/ADC_config.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"MCAL/ADC/ADC_config.d" -MT"MCAL/ADC/ADC_config.o" -c -o "MCAL/ADC/ADC_config.o" "../MCAL/ADC/ADC_config.c"
+Finished building: ../MCAL/ADC/ADC_config.c
+ 
+Building file: ../MCAL/ADC/ADC_program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"MCAL/ADC/ADC_program.d" -MT"MCAL/ADC/ADC_program.o" -c -o "MCAL/ADC/ADC_program.o" "../MCAL/ADC/ADC_program.c"
+In file included from ../MCAL/ADC/ADC_program.c:18:
+../MCAL/ADC/../../SERVICE/IVT.h:21:1: warning: "SREG" redefined
+In file included from ../MCAL/ADC/ADC_program.c:14:
+../MCAL/ADC/ADC_private.h:37:1: warning: this is the location of the previous definition
+Finished building: ../MCAL/ADC/ADC_program.c
+ 
+Building file: ../HAL/WIFI/WIFI_program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"HAL/WIFI/WIFI_program.d" -MT"HAL/WIFI/WIFI_program.o" -c -o "HAL/WIFI/WIFI_program.o" "../HAL/WIFI/WIFI_program.c"
+../HAL/WIFI/WIFI_program.c:24:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+In file included from ../HAL/WIFI/WIFI_program.c:25:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../HAL/WIFI/WIFI_program.c: In function 'WIFI_CheckRespond':
+../HAL/WIFI/WIFI_program.c:105: warning: pointer targets in passing argument 1 of 'is_subset' differ in signedness
+../HAL/WIFI/WIFI_program.c:105: warning: pointer targets in passing argument 2 of 'is_subset' differ in signedness
+../HAL/WIFI/WIFI_program.c: In function 'WIFI_BufferClear':
+../HAL/WIFI/WIFI_program.c:121: warning: implicit declaration of function 'WIFI_BufferMemoryReset'
+../HAL/WIFI/WIFI_program.c: At top level:
+../HAL/WIFI/WIFI_program.c:124: warning: conflicting types for 'WIFI_BufferMemoryReset'
+../HAL/WIFI/WIFI_program.c:121: warning: previous implicit declaration of 'WIFI_BufferMemoryReset' was here
+../HAL/WIFI/WIFI_program.c: In function 'WIFI_Init':
+../HAL/WIFI/WIFI_program.c:180: warning: pointer targets in passing argument 1 of 'WIFI_SendATCommand' differ in signedness
+../HAL/WIFI/WIFI_program.c:180: warning: pointer targets in passing argument 3 of 'WIFI_SendATCommand' differ in signedness
+../HAL/WIFI/WIFI_program.c:186: warning: pointer targets in passing argument 1 of 'WIFI_SendATCommand' differ in signedness
+../HAL/WIFI/WIFI_program.c:186: warning: pointer targets in passing argument 3 of 'WIFI_SendATCommand' differ in signedness
+../HAL/WIFI/WIFI_program.c:194: warning: pointer targets in passing argument 1 of 'WIFI_SendATCommand' differ in signedness
+../HAL/WIFI/WIFI_program.c:194: warning: pointer targets in passing argument 3 of 'WIFI_SendATCommand' differ in signedness
+../HAL/WIFI/WIFI_program.c:201: warning: pointer targets in passing argument 1 of 'WIFI_SendATCommand' differ in signedness
+../HAL/WIFI/WIFI_program.c:201: warning: pointer targets in passing argument 3 of 'WIFI_SendATCommand' differ in signedness
+../HAL/WIFI/WIFI_program.c:209: warning: pointer targets in passing argument 1 of 'WIFI_SendATCommand' differ in signedness
+../HAL/WIFI/WIFI_program.c:209: warning: pointer targets in passing argument 3 of 'WIFI_SendATCommand' differ in signedness
+../HAL/WIFI/WIFI_program.c: In function 'WiFi_joinAccessPoint':
+../HAL/WIFI/WIFI_program.c:220: warning: implicit declaration of function 'sprintf'
+../HAL/WIFI/WIFI_program.c:220: warning: incompatible implicit declaration of built-in function 'sprintf'
+../HAL/WIFI/WIFI_program.c:220: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness
+../HAL/WIFI/WIFI_program.c:223: warning: pointer targets in passing argument 3 of 'WIFI_SendATCommand' differ in signedness
+../HAL/WIFI/WIFI_program.c:223: warning: passing argument 4 of 'WIFI_SendATCommand' from incompatible pointer type
+../HAL/WIFI/WIFI_program.c:240: warning: pointer targets in passing argument 1 of 'WIFI_CheckRespond' differ in signedness
+../HAL/WIFI/WIFI_program.c:247: warning: pointer targets in passing argument 1 of 'is_subset' differ in signedness
+../HAL/WIFI/WIFI_program.c:249: warning: pointer targets in passing argument 1 of 'is_subset' differ in signedness
+../HAL/WIFI/WIFI_program.c:251: warning: pointer targets in passing argument 1 of 'is_subset' differ in signedness
+../HAL/WIFI/WIFI_program.c:253: warning: pointer targets in passing argument 1 of 'is_subset' differ in signedness
+../HAL/WIFI/WIFI_program.c:261: warning: pointer targets in passing argument 1 of 'WIFI_CheckRespond' differ in signedness
+../HAL/WIFI/WIFI_program.c: In function 'WiFi_checkConnection':
+../HAL/WIFI/WIFI_program.c:270: warning: pointer targets in passing argument 1 of 'WIFI_SendATCommand' differ in signedness
+../HAL/WIFI/WIFI_program.c:270: warning: pointer targets in passing argument 3 of 'WIFI_SendATCommand' differ in signedness
+../HAL/WIFI/WIFI_program.c:270: warning: passing argument 4 of 'WIFI_SendATCommand' from incompatible pointer type
+../HAL/WIFI/WIFI_program.c:278: warning: pointer targets in passing argument 1 of 'is_subset' differ in signedness
+../HAL/WIFI/WIFI_program.c:280: warning: pointer targets in passing argument 1 of 'is_subset' differ in signedness
+../HAL/WIFI/WIFI_program.c:282: warning: pointer targets in passing argument 1 of 'is_subset' differ in signedness
+../HAL/WIFI/WIFI_program.c: In function 'WiFi_start':
+../HAL/WIFI/WIFI_program.c:294: warning: incompatible implicit declaration of built-in function 'sprintf'
+../HAL/WIFI/WIFI_program.c:294: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness
+../HAL/WIFI/WIFI_program.c:297: warning: pointer targets in passing argument 3 of 'WIFI_SendATCommand' differ in signedness
+../HAL/WIFI/WIFI_program.c:297: warning: passing argument 4 of 'WIFI_SendATCommand' from incompatible pointer type
+../HAL/WIFI/WIFI_program.c:311: warning: pointer targets in passing argument 1 of 'WIFI_CheckRespond' differ in signedness
+../HAL/WIFI/WIFI_program.c:322: warning: pointer targets in passing argument 1 of 'is_subset' differ in signedness
+../HAL/WIFI/WIFI_program.c:330: warning: pointer targets in passing argument 1 of 'WIFI_CheckRespond' differ in signedness
+../HAL/WIFI/WIFI_program.c:338: warning: pointer targets in passing argument 1 of 'is_subset' differ in signedness
+../HAL/WIFI/WIFI_program.c:346: warning: pointer targets in passing argument 1 of 'WIFI_CheckRespond' differ in signedness
+../HAL/WIFI/WIFI_program.c: In function 'WiFi_send':
+../HAL/WIFI/WIFI_program.c:363: warning: incompatible implicit declaration of built-in function 'sprintf'
+../HAL/WIFI/WIFI_program.c:363: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness
+../HAL/WIFI/WIFI_program.c:366: warning: pointer targets in passing argument 3 of 'WIFI_SendATCommand' differ in signedness
+../HAL/WIFI/WIFI_program.c:366: warning: passing argument 4 of 'WIFI_SendATCommand' from incompatible pointer type
+../HAL/WIFI/WIFI_program.c:370: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness
+../HAL/WIFI/WIFI_program.c:373: warning: pointer targets in passing argument 3 of 'WIFI_SendATCommand' differ in signedness
+../HAL/WIFI/WIFI_program.c:373: warning: passing argument 4 of 'WIFI_SendATCommand' from incompatible pointer type
+Finished building: ../HAL/WIFI/WIFI_program.c
+ 
+Building file: ../HAL/LCD/LCD_program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"HAL/LCD/LCD_program.d" -MT"HAL/LCD/LCD_program.o" -c -o "HAL/LCD/LCD_program.o" "../HAL/LCD/LCD_program.c"
+../HAL/LCD/LCD_program.c:20:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+In file included from ../HAL/LCD/LCD_program.c:21:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../HAL/LCD/LCD_program.c: In function 'LCD_intToString':
+../HAL/LCD/LCD_program.c:430: warning: pointer targets in passing argument 2 of 'itoa' differ in signedness
+Finished building: ../HAL/LCD/LCD_program.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:8:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+In file included from ../main.c:9:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c: In function 'main':
+../main.c:59: warning: pointer targets in passing argument 1 of 'LCD_DisplayString' differ in signedness
+../main.c:67: warning: pointer targets in passing argument 1 of 'LCD_DisplayString' differ in signedness
+../main.c:71: warning: pointer targets in passing argument 1 of 'LCD_DisplayString' differ in signedness
+../main.c:79: warning: pointer targets in passing argument 1 of 'LCD_DisplayString' differ in signedness
+../main.c:83: warning: pointer targets in passing argument 1 of 'LCD_DisplayString' differ in signedness
+../main.c:87: warning: pointer targets in passing argument 1 of 'LCD_DisplayString' differ in signedness
+../main.c:91: warning: pointer targets in passing argument 1 of 'LCD_DisplayString' differ in signedness
+../main.c:95: warning: pointer targets in passing argument 1 of 'LCD_DisplayString' differ in signedness
+../main.c:104: warning: pointer targets in passing argument 1 of 'LCD_DisplayString' differ in signedness
+../main.c:108: warning: pointer targets in passing argument 1 of 'LCD_DisplayString' differ in signedness
+../main.c:112: warning: pointer targets in passing argument 1 of 'LCD_DisplayString' differ in signedness
+../main.c:116: warning: pointer targets in passing argument 1 of 'LCD_DisplayString' differ in signedness
+../main.c:123: warning: pointer targets in passing argument 1 of 'LCD_DisplayString' differ in signedness
+../main.c:128: warning: pointer targets in passing argument 1 of 'LCD_DisplayString' differ in signedness
+../main.c:132: warning: pointer targets in passing argument 1 of 'LCD_DisplayString' differ in signedness
+../main.c:140: warning: pointer targets in passing argument 1 of 'LCD_DisplayString' differ in signedness
+../main.c:144: warning: pointer targets in passing argument 1 of 'LCD_DisplayString' differ in signedness
+../main.c:156: warning: pointer targets in passing argument 1 of 'LCD_DisplayString' differ in signedness
+../main.c:164: warning: implicit declaration of function 'sprintf'
+../main.c:164: warning: incompatible implicit declaration of built-in function 'sprintf'
+../main.c:164: warning: pointer targets in passing argument 1 of 'sprintf' differ in signedness
+../main.c:171: warning: pointer targets in passing argument 1 of 'LCD_DisplayString' differ in signedness
+../main.c:175: warning: pointer targets in passing argument 1 of 'LCD_DisplayString' differ in signedness
+../main.c:181: warning: pointer targets in passing argument 1 of 'LCD_DisplayString' differ in signedness
+../main.c:185: warning: pointer targets in passing argument 1 of 'LCD_DisplayString' differ in signedness
+Finished building: ../main.c
+ 
+Building target: WIFI_ThingSpeak.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,WIFI_ThingSpeak.map -mmcu=atmega16 -o "WIFI_ThingSpeak.elf"  ./SERVICE/STRING_SERVICE_FUN.o  ./MCAL/USART/USART_config.o ./MCAL/USART/USART_program.o  ./MCAL/TIMER0/TIMER0_config.o ./MCAL/TIMER0/TIMER0_program.o  ./MCAL/GPIO/GPIO_program.o  ./MCAL/ADC/ADC_config.o ./MCAL/ADC/ADC_program.o  ./HAL/WIFI/WIFI_program.o  ./HAL/LCD/LCD_program.o  ./main.o   
+Finished building target: WIFI_ThingSpeak.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S WIFI_ThingSpeak.elf  >"WIFI_ThingSpeak.lss"
+Finished building: WIFI_ThingSpeak.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 WIFI_ThingSpeak.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   23000 bytes (140.4% Full)
+(.text + .data + .bootloader)
+
+Data:        819 bytes (80.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+21:15:52 Build Finished. 0 errors, 88 warnings. (took 1s.838ms)
+
