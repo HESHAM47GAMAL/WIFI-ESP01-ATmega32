@@ -27,10 +27,4 @@
 
 ## Demo
 
-[![Video Demo](https://img.youtube.com/vi/YOUR_VIDEO_ID_HERE/0.jpg)](https://youtu.be/9JBcp_3oQnw)
-
-<iframe width="560" height="315" src="https://youtu.be/9JBcp_3oQnw" frameborder="0" allowfullscreen></iframe>
-
-[![Hi](https://github.com/HESHAM47GAMAL/WIFI-ESP01-ATmega32/blob/main/Demo.mp4)](https://www.youtube.com/watch?v=9JBcp_3oQnw&ab_channel=abdallahalmahdy-%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87%D8%A7%D9%84%D9%85%D9%87%D8%AF%D9%8A)
-
-![Video Demo](https://www.youtube.com/watch?v=9JBcp_3oQnw&ab_channel=abdallahalmahdy-%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%D9%87%D8%A7%D9%84%D9%85%D9%87%D8%AF%D9%8A)
+[<img src="https://i.ytimg.com/vi/Hc79sDi3f0U/maxresdefault.jpg" width="50%">](https://youtu.be/9JBcp_3oQnw "Now in Android: 55")
