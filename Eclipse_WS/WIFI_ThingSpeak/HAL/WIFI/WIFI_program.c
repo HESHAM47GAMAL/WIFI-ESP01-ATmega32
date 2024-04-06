@@ -1,10 +1,10 @@
  /******************************************************************************
  *
- * Module: Finger Print
+ * Module: WIFI
  *
- * File Name: FingerPrint_program.c
+ * File Name: WIFI_program.c
  *
- * Description: contain Implementation of Finger Print Driver 
+ * Description: contain Implementation of Wifi ESP8266 module
  *
  * Author: Hesham Shehata
  *
@@ -26,9 +26,15 @@
 
 
 uint8 operation_Done = 0;
-
+/*  Maximum size for buffer used for carry received data*/
 #define DEFAULT_BUFFER_SIZE 100
+
+
+
+/*  array this carry received data*/
 uint8 Rec_Data[DEFAULT_BUFFER_SIZE] = {};
+
+/*  used to count time of happening timeout for current operation  */
 uint8 Counter=0;
 
 uint16 Max_TimeOut = 400; //by Try and error this acceptable number
@@ -38,7 +44,7 @@ void WIFI_Buffer(void)
 {
     uint8 oldsrg = SREG;
 	cli();
-	Rec_Data[Counter] = USART_Catch_UDR_Value();
+	Rec_Data[Counter] = USART_Catch_UDR_Value(); /* Load last read*/
 	Counter++;
 	if(Counter == DEFAULT_BUFFER_SIZE){
 		Counter = 0; //pointer = 0;
@@ -106,8 +112,6 @@ void WIFI_CheckRespond(uint8 * expected_Respond,WIFI_Result * WIFI_state)
     {
          _delay_ms(500);
 
-        
-        // WIFI_BufferClear();
         *WIFI_state =  WIFI_OK ;
         return ;
     }
@@ -132,22 +136,31 @@ void WIFI_BufferMemoryReset(uint8 * string , uint8 value , uint8 length)
 
 void WIFI_SendATCommand(uint8 * command ,uint8 size , uint8 * expected_Respond,WIFI_Result * WIFI_state)
 {
+    /*this part for debug only  */
     LCD_ClearScreen();
     _delay_ms(500);
     operation_Done++;
+
+
     if(size == 0)
     {
         /*  Clear buffer if filled for any reason  */
         WIFI_BufferClear();
+        /*  Send command*/
         USART_SendStringPolling(command);
     }
+    /*  initlialize varaible that will count number of timeout happen*/
     uint16 Timeout = 0 ;
+    /*  Will be in this loop until timeout happen or receive expected output    */
     while((Timeout != Max_TimeOut) && (* WIFI_state != WIFI_OK) )
     {
         WIFI_CheckRespond(expected_Respond,WIFI_state);
+        /*  initilaize timer value  */
         Timer0_UpdateValue(0);
+        /*  Make polling time delay  */
         Timer0_DelayOVFPolling();
         Timeout++;
+        /*  used for debug  */
         LCD_MoveCursor(1,7);
         LCD_intToString(Timeout);
     }
@@ -167,8 +180,10 @@ void WIFI_Init(WIFI_Result * WIFI_state)
     /*  Initialize UART */ 
     USART_Init();
 
+    /*  Enable receiving Interrupt  */
     USART_EnableReceiveInerrupt();
 
+    /*  set function that will be called when receive byte  */
     USART_receiveByteAsynchCallBack(WIFI_Buffer);
     
     /*  initilaize Timer0 with prescaler 8 normal mode as one time delay = 256 us  */
@@ -176,7 +191,7 @@ void WIFI_Init(WIFI_Result * WIFI_state)
 
     * WIFI_state = WIFI_ERROR ;
 
-    /*  1st thing   */
+    /*  1st thing  check existance of WIFI */
     WIFI_SendATCommand("AT\r\n",0,"\r\nOK\r\n",WIFI_state);
     
     /*  2nd disable Echo  */   
@@ -217,6 +232,7 @@ void WiFi_joinAccessPoint(uint8* SSID, uint8* pass, WIFI_SSD_Connection_Type * p
 {
     uint8 ATCommand[60];
     WIFI_BufferMemoryReset(ATCommand,0,60);
+    /*  make concatenate for AT command*/
     sprintf(ATCommand, "AT+CWJAP_DEF=\"%s\",\"%s\"\r\n", SSID, pass);
     ATCommand[59] = 0;
     *pRresult =WIFI_Connection_FAil;
