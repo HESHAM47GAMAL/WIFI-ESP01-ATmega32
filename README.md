@@ -28,7 +28,10 @@
 
 ## Demo
 
-![Click here to watch the video](https://www.youtube.com/watch?v=RN_lC8C-PBA)
+https://github.com/HESHAM47GAMAL/WIFI-ESP01-ATmega32/assets/77234053/fbea0bfc-67a7-46c2-a3f6-46165dd1521a
+
+https://github.com/HESHAM47GAMAL/WIFI-ESP01-ATmega32/assets/77234053/2e5e8765-ba28-491f-b26a-a83693fe1ada
+
 
 
 ## Yotube
