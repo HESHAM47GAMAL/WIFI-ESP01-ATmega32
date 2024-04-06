@@ -32,7 +32,7 @@ https://github.com/HESHAM47GAMAL/WIFI-ESP01-ATmega32/assets/77234053/fbea0bfc-67
 
 https://github.com/HESHAM47GAMAL/WIFI-ESP01-ATmega32/assets/77234053/2e5e8765-ba28-491f-b26a-a83693fe1ada
 
-
+https://github.com/HESHAM47GAMAL/WIFI-ESP01-ATmega32/assets/77234053/70c61080-70e4-4b79-b90c-58e8e962d762
 
 ## Yotube
 [Can go to yotube video to watch more details and avoid some mistakes](https://www.youtube.com/embed/RN_lC8C-PBA?si=3bOpSMosy5-1dwtE)
